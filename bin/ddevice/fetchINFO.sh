@@ -12,8 +12,6 @@ BUILD_ID="$work_dir/bin/ddevice/base_build_id.txt"
 DATA="$work_dir/bin/ddevice/data/devices_data.txt"
 FILE_JSON1="$work_dir/bin/ddevice/data/devices.json"
 ntver=$(cat $work_dir/Version)
-RMMD="$work_dir/README.md"
-builduser=$(cat $work_dir/BuildUser)
 dir="$work_dir/build/baserom/images/config"
 patterns=(
     '\/my_product\/media\/theme\/uxicons\/hdpi\/com\.tencent\.mm\/'
@@ -161,15 +159,12 @@ echo "- Device: "$MYNAME""
 echo "- Model: "$DEVICE_MODEL""
 echo "- Codename: "$CODENAME""  
 echo "- Brand: "$BRAND""  
-echo "- Build Username: $builduser"
 echo "- ROM Version: "$BRAND_OS" "$ROMVERSION""
 echo "- Base Version: "$BRAND_OS" "$BASE_BUILD_ID""
 echo "- Base Region: "$BASE_REGION"" 
 echo "- Android: "$ANDROID_VER""                                                                                                            
-echo "- BuildTool Version:"$ntver""
+echo "- SourceBuild Version:"$ntver""
 echo "------------------------------------------------------------------------------------"
 }
-#README.MD Information
-sed -i "s/devname/${MYNAME}/g" $RMMD
-sed -i "s/devcode/${DEVICE_MODEL}/g" $RMMD
+
 
