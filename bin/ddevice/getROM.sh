@@ -6,6 +6,45 @@ source $work_dir/functions.sh
 rm -rf $work_dir/out
 rm -rf $work_dir/build
 
+if [[ -z "$baserom" ]]; then
+    echo "No download link!Exiting..."
+    exit 1
+fi
+
+if [[ "$baserom" == *"downloadCheck"* ]]; then
+    echo "[+] Found Oplus A16+ ota link!Decryption..."
+
+    DATA=$(python3 << END
+import requests
+import json
+import sys
+
+url = "$baserom"
+headers = {
+    "User-Agent": "okhttp/3.12.12",
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "Keep-Alive",
+    "Cache-Control": "no-cache",
+    "userId": "oplus-ota|16002018",
+}
+
+try:
+    response = requests.get(url, headers=headers, timeout=10)
+    print(response.text)
+except Exception as e:
+    print(f"ERROR: {e}")
+    sys.exit(1)
+END
+)
+
+    if [ $? -eq 0 ] && [ ! -z "$DATA" ]; then
+        baserom="$DATA"
+    else
+        echo "[-] Can't catch the data..."
+    fi
+fi
+
 # Check whether it is a local package or a link
 if [ ! -f "${baserom}" ] && [ "$(echo $baserom |grep http)" != "" ]; then
     blue "Download link detected, starting a download..."
