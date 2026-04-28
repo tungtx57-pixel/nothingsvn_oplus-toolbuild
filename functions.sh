@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-3.0
+
 WORK_DIR=$(pwd)
 # Define color output function
 error() {

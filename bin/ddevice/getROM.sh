@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-3.0
+
 baserom="$1"
 work_dir=$(pwd)
 source $work_dir/functions.sh

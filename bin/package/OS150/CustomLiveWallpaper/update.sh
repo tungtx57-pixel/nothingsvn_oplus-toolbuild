@@ -1,3 +1,6 @@
+#!/bin/bash
+# SPDX-License-Identifier: GPL-3.0
+
 work_dir=$(pwd)
 source $work_dir/functions.sh
 MAIN_FOLDER="$work_dir/build/baserom/images"

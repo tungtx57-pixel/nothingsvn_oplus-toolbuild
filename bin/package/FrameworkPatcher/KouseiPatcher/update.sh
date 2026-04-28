@@ -1,3 +1,6 @@
+#!/bin/bash
+# SPDX-License-Identifier: GPL-3.0
+
 work_dir=$(pwd)
 source $work_dir/functions.sh
 prop="$work_dir/bin/package/FrameworkPatcher/KouseiPatcher/prop"
