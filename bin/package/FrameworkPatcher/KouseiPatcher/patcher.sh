@@ -1,3 +1,6 @@
+#!/bin/bash
+# SPDX-License-Identifier: GPL-3.0
+
 dir=$(pwd)
 sdkLevel=$(cat $dir/bin/ddevice/sdkLevel.txt)
 patch="python3 $dir/bin/package/FrameworkPatcher/KouseiPatcher/toolbox.py"

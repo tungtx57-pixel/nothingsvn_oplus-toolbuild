@@ -1,3 +1,6 @@
+#!/bin/bash
+# SPDX-License-Identifier: GPL-3.0
+
 work_dir=$(pwd)
 source $work_dir/bin/ddevice/fetchINFO.sh
 BASE_REGION=$(cat $work_dir/bin/ddevice/rom_region.txt)
