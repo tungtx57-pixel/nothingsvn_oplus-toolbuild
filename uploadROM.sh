@@ -1,6 +1,9 @@
 #!/bin/bash
 # SPDX-License-Identifier: GPL-3.0
 
+work_dir=$(pwd)
+source $work_dir/functions.sh
+
 if [ "$1" == "setup" ]; then
   if [ -z "$2" ] || [ -z "$3" ] || [ -z "$4" ]; then
     echo "[ERROR] - Please provide rclone token and remote name"
@@ -12,8 +15,7 @@ if [ "$1" == "setup" ]; then
         -L https://api.github.com/repos/$3/contents/$4
   exit 0
 fi
-work_dir=$(pwd)
-source $work_dir/functions.sh
+
 ANDROID_VER=$(cat $work_dir/bin/ddevice/androidver.txt)
 DEVICE_MODEL=$(cat $work_dir/bin/ddevice/device_model.txt)
 BASE_BUILD_ID=$(cat $work_dir/bin/ddevice/base_build_id.txt)
