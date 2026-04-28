@@ -1,20 +1,17 @@
-
-# NothingsVN Custom OEM ROM Project
-
-Oplus Custom OEM ROM toolbuilder make from Official OEM ROM to Modifiled ROM with custom mods for Global user
-
+# NothingsVN AutoBuild
+OnePlus custom OEM firmware tool-builder make from official OEM firmware to modifiled ROM with custom mods for Global users
 
 ## Feature
-- Added Gapps by default(For Domestic ROM).
+- Added Gapps by default (For Domestic ROM).
 - AI Fixing for domestic ROM
+- KaoriOS Toolbox
 - Updated soon...
 
-
-### Authors
-
+## Authors
 - [Chau Vinh Tien](https://github.com/tiencv2006)
 
-### Credit
+
+## Credit
 - [Kousei](https://t.me/Kousei_jp) for kaorios toolbox
 - [MaiAFK](https://t.me/maiphp) for website idea and some code web server
 - [Mốc](https://t.me/jerryx0x) for some mod method,build method
@@ -29,3 +26,7 @@ Oplus Custom OEM ROM toolbuilder make from Official OEM ROM to Modifiled ROM wit
 - Claude
 - And everyone who testing ROM and feedback to me!
 - List will be updated soon.
+
+## Reach US
+- [Telegram Discussion](https://t.me/nothingscom)
+- [Telegram News](https://t.me/oneplusntvn)
