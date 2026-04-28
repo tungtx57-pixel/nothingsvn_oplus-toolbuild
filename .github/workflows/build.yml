@@ -71,7 +71,7 @@ jobs:
         env:
           ONEDRIVE_TOKEN: ${{ secrets.RCLONE_TOKEN }}
         run: |
-          sudo bash uploadROM.sh "${{ secrets.RCLONE_TOKEN }}"
+          sudo -E bash uploadROM.sh "$ONEDRIVE_TOKEN"
       
       - name: Update Database and Notificaton to Telegram
         env:
