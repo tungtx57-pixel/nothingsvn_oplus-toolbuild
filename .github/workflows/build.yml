@@ -70,13 +70,14 @@ jobs:
         run: |
           sudo chmod 777 -R *
 
-      - name: Get environment build before install...
+      - name: Get environment Toolbox boolean before install...
         if: ${{ inputs.kaorios_toolbox }} == 'true'
         run: |
           echo "install_toolbox=true"
         else:
           echo "install_toolbox=false"
           
+      - name: Get environment Mods boolean before install...
         if: ${{ inputs.install_mods }} == 'true'
         run: |
           echo "install_mods=true"
