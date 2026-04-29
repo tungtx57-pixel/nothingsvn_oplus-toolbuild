@@ -68,6 +68,10 @@ jobs:
       - name: Setup Rclone...
         run: |
           sudo -E bash uploadROM.sh setup "${{ secrets.GH_TOKEN }}" "${{ secrets.GH_REPO }}" "${{ secrets.RCLONE_TOKEN_PATH }}"
+
+      - name: Generate Rclone Config
+        run: |
+          echo "${{ secrets.RCLONE_CONF_DATA }}" > rclone.conf
           
       - name: Upload ROM...
         run: |
