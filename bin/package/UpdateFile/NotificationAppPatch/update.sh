@@ -105,10 +105,10 @@ GBLOB15="$work_dir/bin/package/UpdateFile/NotificationAppPatch/A15/NotificationC
 Athena=$(find "$MAIN_FOLDER/system_ext" -type d -name "Athena")
 GAthena="$work_dir/bin/package/UpdateFile/NotificationAppPatch/A15/Athena"
 rm -rf $GSYS15/*
-mv $GBLOB15/* $GSYS15
+cp $GBLOB15/* $GSYS15
 echo "[MODS] - Fixing Banner And Lock Screen Notification"
 rm -rf $Athena/*
-mv $GAthena/* $Athena
+cp $GAthena/* $Athena
 echo "[MODS] - Done"
 elif [[ $ANDROID_VER == "16" ]]; then
 GSYS=$(find "$MAIN_FOLDER/system_ext" -type d -name "NotificationCenter")
