@@ -162,7 +162,7 @@ A huge thank you to everyone who made this project possible:
 | [MaiAFK](https://t.me/maiphp) | Website concept & web server code |
 | [Mốc](https://t.me/jerryx0x) | Mod & build methods |
 | [summert](https://t.me/ntai15) | Coding support & issue resolution |
-| [BHLNK](https://t.me/bhlnk) | AI fixing spoof methods |
+| [BUỒI HIỀN](https://t.me/bhlnk) | AI fixing spoof methods |
 
 ### 💰 Sponsors
 
